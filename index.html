@@ -1,43 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+  <title>Document</title>
 </head>
 <body>
-    <form class="needs-validation" novalidate>
-        <div class="form-row"></div>
-        <div class="col-md-6 mb-3">
-            <label for="validationCustom03">City</label>
-            <input type="text" class="form-control" id="validationCustom03" required>
-            <div class="invalid-feedback">
-                Please provide a valid city.
+
+  <div class="header">Weather Dashboard</div>
+  <div class="content">
+    <div class="sidebar">
+      <h1>Sidebar</h1>
+      <div>Salt Lake City</div>
+      <div>Chicago</div>
+      <div>New York</div>
+      <div>Orlando</div>
+      <div>San Francisco</div>
+      <div>Seattle</div>
+      <div>Denver</div>
+    </div>
+    <div class="weather">
+      <div class="current-weather">
+        <h1>current weather</h1>
+        <div>Temperature:</div>
+        <div>Humidity:</div>
+        <div>Wind Speed:</div>
+        <div>UV index:</div>
+      </div>
+      <div class="futher-weather">
+        <h1>5-Day Forecast</h1>
+        <div class="forecast">
+          <div class="forecast-card">
+            <h3>8/16/2019</h3>
+            <div>
+              <label>Temp:</label>
+              <p>8/16/2019</p>
             </div>
-        </dils
-        v>
-        <button class="btn btn-primary" type="submit">Submit</button>
-    </form>
+            <div>
+              <label>Humidity:</label>
+              <p>8/16/2019</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <h3>8/16/2019</h3>
+            <div>
+              <label>Temp:</label>
+              <p>8/16/2019</p>
+            </div>
+            <div>
+              <label>Humidity:</label>
+              <p>8/16/2019</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <h3>8/16/2019</h3>
+            <div>
+              <label>Temp:</label>
+              <p>8/16/2019</p>
+            </div>
+            <div>
+              <label>Humidity:</label>
+              <p>8/16/2019</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <h3>8/16/2019</h3>
+            <div>
+              <label>Temp:</label>
+              <p>8/16/2019</p>
+            </div>
+            <div>
+              <label>Humidity:</label>
+              <p>8/16/2019</p>
+            </div>
+          </div>
+          <div class="forecast-card">
+            <h3>8/16/2019</h3>
+            <div>
+              <label>Temp:</label>
+              <p>8/16/2019</p>
+            </div>
+            <div>
+              <label>Humidity:</label>
+              <p>8/16/2019</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- <h1>Search for a city:</h1>
+    <div class="wrapper">
+      <div class="row">
+        <input type="text" class="input" placeholder="Enter here">
+        <div class="searchbtn"><i class="fas fa-search"></i></div>
+      </div>
       
-      <script>
-      // Example starter JavaScript for disabling form submissions if there are invalid fields
-      (function() {
-        'use strict';
-        window.addEventListener('load', function() {
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.getElementsByClassName('needs-validation');
-          // Loop over them and prevent submission
-          var validation = Array.prototype.filter.call(forms, function(form) {
-            form.addEventListener('submit', function(event) {
-              if (form.checkValidity() === false) {
-                event.preventDefault();
-                event.stopPropagation();
-              }
-              form.classList.add('was-validated');
-            }, false);
-          });
-        }, false);
-      })();
-      </script>
+      <div class="currentTemp">
+        
+        90.9 F
+      </div>
+    </div>
+  
+    <div class="container city">
+      <div class="row"
+  
+      90.9 F
+      
+      <div class="forcast">
+        
+      </div>
+    </div> -->
+
+      
+  <script>
+
+  </script>
 </body>
 </html>
