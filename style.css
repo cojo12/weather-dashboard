@@ -3,6 +3,7 @@
     padding: 0;
     outline: none;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
@@ -16,7 +17,8 @@ body {
 }
 
 .header {
-    background-color: darkgray;
+    background-color: #353A3F;
+    color: white;
     font-size: 50px;
     font-weight: bold;
     justify-content: center;
@@ -32,13 +34,13 @@ body {
 }
 
 .sidebar {
-    background-color: orange;
+    background-color: #F8F9FA;
     width: 25%;
     padding: 10px;
 }
 
 .weather {
-    background-color: papayawhip;
+    background-color: #FFFFFF;
     width: 75%;
     padding: 10px;
 }
@@ -48,18 +50,21 @@ body {
 }
 
 .forecast-card {
-    background-color: lightskyblue;
+    background-color: #2286F7;
     margin: 5px;
 }
 
 .forecast-card > div {
-    background-color: green;
     margin: 10px;
     padding: 5px;
 }
 
 h1 {
     margin: auto;
+}
+
+h3 {
+    margin: 10px;
 }
 
 .wrapper {
@@ -75,7 +80,7 @@ h1 {
 }
 
 .searchbtn {
-    background: gold;
+    background: #2286F7;
     border-radius: 5px;
     cursor: pointer;
     width: 50px;
