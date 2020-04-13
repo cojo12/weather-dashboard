@@ -71,7 +71,8 @@ h3 {
     padding: 10px;
     border-radius: 5px;
     font-size: 15px;
-    width: 30%;
+    width: 60%;
+    border: solid black;
 }
 
 #searchbtn {

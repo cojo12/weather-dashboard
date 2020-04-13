@@ -18,24 +18,18 @@
         <button id="searchbtn"><i class="fas fa-search"></i></button>
       </div>
       <div class="search-history">
-        <div>Salt Lake City</div>
-        <div>Chicago</div>
-        <div>New York</div>
-        <div>Orlando</div>
-        <div>San Francisco</div>
-        <div>Seattle</div>
-        <div>Denver</div>
+        <div></div>
       </div>
     </div>
     <div class="weather">
       <div class="current-weather">
-        <h1>current weather</h1>
+        <h1 id="current-city"></h1>
         <div>Temperature: <p id="current-temp"></p></div>
         <div>Humidity: <p id="current-humidity"></p></div>
         <div>Wind Speed: <p id="current-wind"></p></div>
         <div>UV index: <p id="current-uvi"></p></div>
       </div>
-      <div class="futher-weather">
+      <div class="future-weather">
         <h1>5-Day Forecast</h1>
         <div id="forecast">
           <div class="forecast-card">
@@ -74,6 +68,7 @@
               $('#current-humidity').text(response.main.humidity);
               $('#current-wind').text(response.wind.speed);
               $('#current-uvi').text(uviResponse.value);
+              $('#current-city').text(response.name);
             })
             .catch(function (error) {
               console.error(error);
@@ -86,6 +81,7 @@
       const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apikey}`;
 
       $.ajax({method: 'GET', url: forecastURL})
+
         .then(function (forecastResponse) {
           console.log('forecast response', forecastResponse);
           $('#forecast').empty();
